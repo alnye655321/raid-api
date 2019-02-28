@@ -23,6 +23,17 @@ public class Question extends AuditModel {
     @Column(columnDefinition = "text")
     private String description;
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    @Column(columnDefinition = "text")
+    private String userName;
+
     @Column(columnDefinition = "integer")
     private int sessionId;
 
