@@ -44,6 +44,7 @@ public class QuestionController {
                 .map(question -> {
                     question.setTitle(questionRequest.getTitle());
                     question.setDescription(questionRequest.getDescription());
+                    question.setSessionId(questionRequest.getSessionId());
                     return questionRepository.save(question);
                 }).orElseThrow(() -> new ResourceNotFoundException("Question not found with id " + questionId));
     }
