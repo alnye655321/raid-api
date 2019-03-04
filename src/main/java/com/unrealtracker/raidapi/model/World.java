@@ -31,6 +31,9 @@ public class World extends AuditModel {
     @Column(columnDefinition = "double precision")
     private float gameTime;
 
+    @Column(columnDefinition = "integer")
+    private int enemyHits;
+
 
     public int getWorldKills() {
         return worldKills;
@@ -72,7 +75,13 @@ public class World extends AuditModel {
         this.gameTime = gameTime;
     }
 
+    public int getEnemyHits() {
+        return enemyHits;
+    }
 
+    public void setEnemyHits(int enemyHits) {
+        this.enemyHits = enemyHits;
+    }
 
 }
 
