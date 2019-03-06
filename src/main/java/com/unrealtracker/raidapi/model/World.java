@@ -34,6 +34,16 @@ public class World extends AuditModel {
     @Column(columnDefinition = "integer")
     private int enemyHits;
 
+    @Column(columnDefinition = "integer")
+    private int worldDamage;
+
+    public int getWorldDamage() {
+        return worldDamage;
+    }
+
+    public void setWorldDamage(int worldDamage) {
+        this.worldDamage = worldDamage;
+    }
 
     public int getWorldKills() {
         return worldKills;
