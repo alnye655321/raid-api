@@ -28,6 +28,28 @@ public class WeddingRes extends AuditModel {
     @Column(columnDefinition = "text")
     private String message;
 
+    @Column(columnDefinition = "text")
+    private String wedding;
+
+    @Column(columnDefinition = "text")
+    private String brunch;
+
+    public String getWedding() {
+        return wedding;
+    }
+
+    public void setWedding(String wedding) {
+        this.wedding = wedding;
+    }
+
+    public String getBrunch() {
+        return brunch;
+    }
+
+    public void setBrunch(String brunch) {
+        this.brunch = brunch;
+    }
+
     public Long getId() {
         return id;
     }
